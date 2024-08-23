@@ -16,7 +16,7 @@
 */
 "use client"
 import { ExternalLinkIcon } from '@heroicons/react/solid'
-import Footer from './footer'
+import Footer from './Footer'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
