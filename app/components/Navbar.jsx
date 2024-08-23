@@ -126,13 +126,13 @@ export default function Navbar() {
                       About Us
                     </a>
                     <a
-                      href="/programs"
+                      href="/Programs"
                       className="text-base font-medium text-gray-500 font-font hover:text-gray-900"
                     >
                       Programs
                     </a>
                     <a
-                      href="/impact"
+                      href="/Impact"
                       className="text-base font-medium text-gray-500 font-font hover:text-gray-900"
                     >
                       Impact
