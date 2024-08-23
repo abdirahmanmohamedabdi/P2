@@ -8,11 +8,42 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+    colors: {
+      
+      'one': '#201E43',
+      'two': '#088395',
+      'three': '#3FA2F6',
+      'nine': '#1B1C25',
+      'white': '#FFFFFF',
+    },
+   
+      fontFamily: {
+       font: ['Kumbh Sans', 'serif'],
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: 0, transform: 'translateX(-100%)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
+        },
+        slideInRight: {
+          '0%': { opacity: 0, transform: 'translateX(100%)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-out',
+        slideInLeft: 'slideInLeft 1s ease-out',
+        slideInRight: 'slideInRight 1s ease-out',
       },
     },
   },
   plugins: [],
-};
+}
