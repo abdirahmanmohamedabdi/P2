@@ -1,27 +1,5 @@
 
 "use client"
-import { ExternalLinkIcon } from '@heroicons/react/solid'
-
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  MenuIcon,
-  PencilAltIcon,
-  QuestionMarkCircleIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
-  XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import {Navbar} from './Navbar'
 import Heroe from './Hero'
 
 
