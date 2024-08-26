@@ -43,8 +43,8 @@ export default function AboutUs() {
           </h3>
           <div className="flex flex-col lg:flex-row items-center">
             {/* Replace with actual founder image */}
-            <Image
-              src="/jamila.jpeg" // Replace with actual image path
+            <img
+              src="https://i.ibb.co/SVLyTp9/Whats-App-Image-2024-08-20-at-7-03-09-PM.jpg" // Replace with actual image path
               alt="Founder"
               className=" w-80 h-80 object-cover mb-6 lg:mb-0 lg:mr-6"
               width={160}

@@ -36,8 +36,8 @@ export default function ProgramsSection() {
           {/* First Column - Image + Text */}
           <div className="space-y-8">
             {/* First Image */}
-            <Image
-              src="/1.jpg" // Replace with actual image path
+            <img
+              src="https://i.ibb.co/jM3CNDv/image-from-rawpixel-id-3372993-jpeg.jpg" // Replace with actual image path
               alt="Program Image 1"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}
@@ -60,8 +60,8 @@ export default function ProgramsSection() {
           {/* Second Column - Image + Text */}
           <div className="space-y-8">
             {/* Second Image */}
-            <Image
-              src="/67.jpg" // Replace with actual image path
+            <img
+              src="https://i.ibb.co/LN0pg8Y/image-from-rawpixel-id-3373004-jpeg.jpg" // Replace with actual image path
               alt="Program Image 2"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}
