@@ -14,9 +14,9 @@ module.exports = {
       },
     colors: {
       
-      'one': '#201E43',
-      'two': '#088395',
-      'three': '#3FA2F6',
+      'one': '#050C9C',
+      'two': '#3ABEF9',
+      'three': '#050C9C',
       'nine': '#1B1C25',
       'white': '#FFFFFF',
     },

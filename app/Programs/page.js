@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Image from "next/image"; // Next.js optimized image component
+
 const programs = [
   {
     title: "Digital Literacy Training",
@@ -21,43 +22,69 @@ const programs = [
       "This program is dedicated to nurturing the next generation of leaders. Through leadership training, mentorship, and community service projects, we empower youth to take active roles in their communities, fostering a culture of responsibility and civic engagement.",
   },
 ];
-
-export default function Example() {
+export default function ProgramsSection() {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-        <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-          <div className="lg:col-span-1">
-            <img
-              className="h-full w-full object-cover lg:h-auto"
-              src="/computer.jpg"
-              alt="Empowering Marginalized Communities"
+    <div className="bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Page Header */}
+        <h2 className="text-4xl font-bold text-center font-font text-two mb-12">
+          Our Programs
+        </h2>
+        
+        {/* Program Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* First Column - Image + Text */}
+          <div className="space-y-8">
+            {/* First Image */}
+            <Image
+              src="/1.jpg" // Replace with actual image path
+              alt="Program Image 1"
+              className="rounded-lg shadow-lg w-full object-cover"
+              width={600}
+              height={400}
             />
+            
+            {/* First Two Programs */}
+            {programs.slice(0, 2).map((program, index) => (
+              <div key={index}>
+                <h3 className="text-2xl font-bold font-font text-two mb-4">
+                  {program.title}
+                </h3>
+                <p className="text-base text-gray-700">
+                  {program.description}
+                </p>
+              </div>
+            ))}
           </div>
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl font-extrabold font-font text-gray-900">
-              Empowering Marginalized Communities Through Innovative Programs
-            </h2>
-            <p className="mt-4 text-lg font-font 0">
-              At Mustaqbal Women and Youth, our programs are designed to bridge the digital divide and empower marginalized communities, particularly women and youth in Nairobi and North Eastern Kenya. We believe in creating opportunities through education, skill development, and community engagement. Our programs are tailored to address the unique challenges faced by these communities, enabling them to thrive in a digital world.
-            </p>
-            <div className="mt-12 lg:mt-6">
-              <dl className="space-y-12">
-                {programs.map((program) => (
-                  <div key={program.title}>
-                    <dt className="text-lg font-font leading-6 font-bold text-two">
-                      {program.title}
-                    </dt>
-                    <dd className="mt-2 font-font text-base ">
-                      {program.description}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
+
+          {/* Second Column - Image + Text */}
+          <div className="space-y-8">
+            {/* Second Image */}
+            <Image
+              src="/67.jpg" // Replace with actual image path
+              alt="Program Image 2"
+              className="rounded-lg shadow-lg w-full object-cover"
+              width={600}
+              height={400}
+            />
+
+            {/* Next Two Programs */}
+            {programs.slice(2).map((program, index) => (
+              <div key={index}>
+                <h3 className="text-2xl font-bold font-font text-two mb-4">
+                  {program.title}
+                </h3>
+                <p className="text-base font-font text-gray-700">
+                  {program.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      
     </div>
   );
 }

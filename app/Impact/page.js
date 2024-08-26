@@ -1,12 +1,17 @@
 export default function Impact() {
     return (
+      
         <div className="relative bg-gray-900">
+
+          
+          
         <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
+          
           <div className="h-full w-full xl:grid xl:grid-cols-2">
             <div className="h-full xl:relative xl:col-start-2">
               <img
                 className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src="/class.jpg"
+                src="/0.jpg"
                 alt="Training session"
               />
               <div
@@ -18,7 +23,7 @@ export default function Impact() {
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
           <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-            <h2 className="text-sm font-semibold font-font text-green-300 tracking-wide uppercase">
+            <h2 className="text-sm font-semibold font-font text-white tracking-wide uppercase">
               Empowerment in Numbers
             </h2>
             <p className="mt-3 text-3xl font-font  font-extrabold text-white">

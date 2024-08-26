@@ -36,7 +36,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="last-name" className="block text-sm font-font text-black text-gray-700">
+          <label htmlFor="last-name" className="block text-sm font-font text-black text-black">
             Last name
           </label>
           <input
@@ -155,7 +155,7 @@ export default function Contact() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="inline-flex justify-center py-2 px-4 border border-transparent font-font text-white shadow-sm text-sm font-medium rounded-md text-white bg-two hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="inline-flex justify-center py-2 px-4 border border-transparent font-font text-white shadow-sm text-sm font-medium rounded-md text-white bg-one  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Submit Form
         </button>

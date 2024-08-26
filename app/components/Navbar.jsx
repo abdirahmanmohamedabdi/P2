@@ -1,83 +1,90 @@
-"use client";
+"use client"
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon, MenuIcon, XIcon } from '@heroicons/react/solid'
 
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  MenuIcon,
-  PencilAltIcon,
-  QuestionMarkCircleIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import { ChevronDownIcon } from "@heroicons/react/solid";
-export default function Navbar() {
+const menuItems = [
+  { name: 'Home', href: '/' },
+  { name: 'Our story', href: '/About' },
+  { name: 'Our impact', href: '/Impact' },
+  { name: 'Our programs', href: '/Programs' },
+ 
+  { name: 'Get Involved', href: '/Contact' },
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
   return (
-    <div>
+    <div className="bg-white sticky top-0 z-50">
       <header>
-        <Popover className="relative bg-white shadow">
-          <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
-                <span className="sr-only">Workflow</span>
-                <img className="h-20 w-auto" src="/1773.png" alt="Workflow" />
-              </a>
-            </div>
+        <Popover className="relative">
+          <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:space-x-10 lg:px-8">
+          <div className="flex justify-start lg:w-0 lg:flex-1">
+  <a href="#">
+    <span className="sr-only">Mustaqbal Women and Youth</span>
+    <img 
+      className="h-16 w-auto"  // Set a fixed height, and width is auto to maintain aspect ratio
+      src="/32.png"  // Ensure the path to your logo image is correct
+      alt="Mustaqbal Women and Youth Logo" 
+    />
+  </a>
+</div>
             <div className="-mr-2 -my-2 md:hidden">
-              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-one focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
+            
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <a
-                href="/"
-                className="text-base font-normal text-black font-font hover:text-gray-900"
-              >
-                Home
-              </a>
-              <a
-                href="/About"
-                className="text-base font-medium text-black  font-font hover:text-gray-900"
-              >
-                About Us
-              </a>
-              <a
-                href="/Programs"
-                className="text-base font-medium text-black  font-font hover:text-gray-900"
-              >
-                Programs
-              </a>
-              <a
-                href="/Impact"
-                className="text-base font-medium text-black  font-font hover:text-gray-900"
-              >
-                Impact
-              </a>
-             
+              {menuItems.map((item) => (
+                <div key={item.name} className="relative">
+                  {item.submenu ? (
+                    <>
+                      <Popover>
+                        {({ open }) => (
+                          <>
+                            <Popover.Button className="text-base font-medium  text-one font-font flex  items-center">
+                              {item.name}
+                              <ChevronDownIcon className="ml-1 h-4 w-4 text-gray-500" aria-hidden="true" />
+                            </Popover.Button>
+                            <Transition
+                              as={Fragment}
+                              enter="transition ease-out duration-200"
+                              enterFrom="opacity-0 translate-y-1"
+                              enterTo="opacity-100 translate-y-0"
+                              leave="transition ease-in duration-150"
+                              leaveFrom="opacity-100 translate-y-0"
+                              leaveTo="opacity-0 translate-y-1"
+                            >
+                              <Popover.Panel className="absolute left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
+                                <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                  <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                    {item.submenu.map((subItem) => (
+                                      <a key={subItem} href="#" className="block text-sm font-font text-one font-medium">
+                                        {subItem}
+                                      </a>
+                                    ))}
+                                  </div>
+                                </div>
+                              </Popover.Panel>
+                            </Transition>
+                          </>
+                        )}
+                      </Popover>
+                    </>
+                  ) : (
+                    <a href={item.href} className="text-base font-medium  text-one font-font">
+                      {item.name}
+                    </a>
+                  )}
+                </div>
+              ))}
             </Popover.Group>
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a
-                href="/Support"
-                className="whitespace-nowrap text-base font-bold text-three font-font hover:text-two"
-              >
-                Get Involved
-              </a>
-              <a
-                href="/Contact"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-two from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-bold font-font font-bold text-white hover:from-purple-700 hover:to-indigo-700"
-              >
-                Contact Us
-              </a>
-            </div>
+           
           </div>
 
           <Transition
@@ -89,19 +96,12 @@ export default function Navbar() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Popover.Panel
-              focus
-              className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            >
+            <Popover.Panel focus className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-20 w-auto"
-                        src="/1773.png"
-                        alt="Workflow"
-                      />
+                      <img className="h-20 w-auto" src="/32.png" alt="Haki Na Sheria Logo" />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -110,54 +110,22 @@ export default function Navbar() {
                       </Popover.Button>
                     </div>
                   </div>
-                </div>
-                <div className="py-6 px-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    <a
-                      href="/"
-                      className="text-base font-normal text-black font-font hover:text-gray-900"
-                    >
-                      Home
-                    </a>
-                    <a
-                      href="/About"
-                      className="text-base font-medium text-gray-500 font-font hover:text-gray-900"
-                    >
-                      About Us
-                    </a>
-                    <a
-                      href="/Programs"
-                      className="text-base font-medium text-gray-500 font-font hover:text-gray-900"
-                    >
-                      Programs
-                    </a>
-                    <a
-                      href="/Impact"
-                      className="text-base font-medium text-gray-500 font-font hover:text-gray-900"
-                    >
-                      Impact
-                    </a>
-                   
-                  </div>
                   <div className="mt-6">
-                    <a
-                      href="/Contact"
-                      className="w-full flex items-center justify-center   bg-two from-purple-600 to-indigo-600 font-font from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
-                    >
-                      Contact Us
-                    </a>
-                    <p className="mt-6 text-center text-base font-medium  text-gray-500">
-                      <a href="/Support" className="text-gray-900 font-font">
-                        Get Involved
-                      </a>
-                    </p>
+                    <nav className="grid gap-y-8">
+                      {menuItems.map((item) => (
+                        <a key={item.name} href={item.href} className="text-base font-medium  text-one font-font ">
+                          {item.name}
+                        </a>
+                      ))}
+                    </nav>
                   </div>
                 </div>
+                
               </div>
             </Popover.Panel>
           </Transition>
         </Popover>
       </header>
     </div>
-  );
+  )
 }
