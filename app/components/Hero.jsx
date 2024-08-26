@@ -6,7 +6,7 @@ export default function Heroe() {
       {/* Hero Section */}
       <div className="relative w-full h-[60vh]"> {/* Set a fixed height */}
         <img
-          src="https://i.ibb.co/HgCdmF5/class.jpg" 
+          src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679655/aW1hZ2UtZnJvbS1yYXdwaXhlbC1pZC0zMzczMTA2LWpwZWdfdW80d3A2/preview" 
           alt="Mustaqbal Hero"
           className="w-full h-full object-cover" // Updated class
         />
@@ -16,7 +16,7 @@ export default function Heroe() {
             <h1 className="text-3xl md:text-5xl font-font font-bold mb-4">
               Mustaqbal Initiative
             </h1>
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-four sm:max-w-3xl">
+            <p className="mt-6 max-w-lg mx-auto text-center text-xl font-font text-four sm:max-w-3xl">
             Mustaqbal Initiative is a non-governmental organization based in Nairobi, Kenya, committed to empowering marginalized communities through digital literacy and skills training. Our focus is on bridging the digital divide and providing access to technology and education for underserved populations in Nairobi and North Eastern Kenya, enabling them to thrive in the digital age
             </p>
           </div>

@@ -43,7 +43,7 @@ export default function Example() {
             <div className="relative pt-44 pb-10 lg:px-0 lg:m-0 lg:relative lg:h-full overflow-hidden">
               <img
                 className="absolute realtive inset-0 h-full w-full object-cover "
-                src="https://i.ibb.co/Wgss180/african-woman-sitting-computer-science-class-lady-with-glasses-female-student-sitting-computer.jpg"
+                src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679667/Y3RhX3ZwanFieA==/preview"
                 alt="Mustaqbal program in action"
               />
             </div>

@@ -27,7 +27,7 @@ export default function ProgramsSection() {
     <div className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
-        <h2 className="text-4xl font-bold text-center font-font text-two mb-12">
+        <h2 className="text-4xl font-bold text-center font-font text-one mb-12">
           Our Programs
         </h2>
         
@@ -37,7 +37,7 @@ export default function ProgramsSection() {
           <div className="space-y-8">
             {/* First Image */}
             <img
-              src="https://i.ibb.co/jM3CNDv/image-from-rawpixel-id-3372993-jpeg.jpg" // Replace with actual image path
+              src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679670/MV9teWM5bmY=/preview" // Replace with actual image path
               alt="Program Image 1"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}
@@ -47,7 +47,7 @@ export default function ProgramsSection() {
             {/* First Two Programs */}
             {programs.slice(0, 2).map((program, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-two mb-4">
+                <h3 className="text-2xl font-bold font-font text-one mb-4">
                   {program.title}
                 </h3>
                 <p className="text-base text-gray-700">
@@ -61,7 +61,7 @@ export default function ProgramsSection() {
           <div className="space-y-8">
             {/* Second Image */}
             <img
-              src="https://i.ibb.co/LN0pg8Y/image-from-rawpixel-id-3373004-jpeg.jpg" // Replace with actual image path
+              src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679661/NjdfeWdzcTJ4/preview" // Replace with actual image path
               alt="Program Image 2"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}
@@ -71,7 +71,7 @@ export default function ProgramsSection() {
             {/* Next Two Programs */}
             {programs.slice(2).map((program, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-two mb-4">
+                <h3 className="text-2xl font-bold font-font text-one  mb-4">
                   {program.title}
                 </h3>
                 <p className="text-base font-font text-gray-700">

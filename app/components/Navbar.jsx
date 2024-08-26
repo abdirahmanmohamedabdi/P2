@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <div className="bg-white sticky top-0 z-50">
+    <div className="bg-white shadow sticky top-0 z-50">
       <header>
         <Popover className="relative">
           <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:space-x-10 lg:px-8">
@@ -77,7 +77,7 @@ export default function Navbar() {
                       </Popover>
                     </>
                   ) : (
-                    <a href={item.href} className="text-base font-medium  text-one font-font">
+                    <a href={item.href} className="text-base font-medium  hover:text-black text-one font-font">
                       {item.name}
                     </a>
                   )}

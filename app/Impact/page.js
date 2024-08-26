@@ -11,7 +11,7 @@ export default function Impact() {
             <div className="h-full xl:relative xl:col-start-2">
               <img
                 className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src="https://i.ibb.co/0hQ6fkz/image-from-rawpixel-id-3373010-jpeg.jpg"
+                src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679661/MF95OXRsNW8=/preview"
                 alt="Training session"
               />
               <div
