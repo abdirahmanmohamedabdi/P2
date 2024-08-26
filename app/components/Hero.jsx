@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CTASection() {
+export default function Heroe() {
   return (
     <div className="bg-white">
       {/* Hero Section */}

@@ -1,6 +1,6 @@
 
 "use client"
-import Heroe from './Hero'
+import Heroe from "./Hero";
 
 
 
