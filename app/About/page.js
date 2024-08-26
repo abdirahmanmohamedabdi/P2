@@ -44,7 +44,7 @@ export default function AboutUs() {
           <div className="flex flex-col lg:flex-row items-center">
             {/* Replace with actual founder image */}
             <img
-              src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679664/amFtaWxhX2JpeTF2NA==/preview" // Replace with actual image path
+              src="/jamila.jpeg" // Replace with actual image path
               alt="Founder"
               className=" w-80 h-80 object-cover mb-6 lg:mb-0 lg:mr-6"
               width={160}

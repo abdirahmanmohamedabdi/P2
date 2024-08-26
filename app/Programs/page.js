@@ -37,7 +37,7 @@ export default function ProgramsSection() {
           <div className="space-y-8">
             {/* First Image */}
             <img
-              src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679670/MV9teWM5bmY=/preview" // Replace with actual image path
+              src="/1.jpg" // Replace with actual image path
               alt="Program Image 1"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}
@@ -61,7 +61,7 @@ export default function ProgramsSection() {
           <div className="space-y-8">
             {/* Second Image */}
             <img
-              src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679661/NjdfeWdzcTJ4/preview" // Replace with actual image path
+              src="/2.jpg" // Replace with actual image path
               alt="Program Image 2"
               className="rounded-lg shadow-lg w-full object-cover"
               width={600}

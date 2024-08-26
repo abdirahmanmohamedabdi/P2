@@ -6,7 +6,7 @@ export default function Heroe() {
       {/* Hero Section */}
       <div className="relative w-full h-[60vh]"> {/* Set a fixed height */}
         <img
-          src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679655/aW1hZ2UtZnJvbS1yYXdwaXhlbC1pZC0zMzczMTA2LWpwZWdfdW80d3A2/preview" 
+          src="/class.jpg" 
           alt="Mustaqbal Hero"
           className="w-full h-full object-cover" // Updated class
         />

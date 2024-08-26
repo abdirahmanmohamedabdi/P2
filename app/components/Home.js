@@ -43,7 +43,7 @@ export default function Example() {
             <div className="relative pt-44 pb-10 lg:px-0 lg:m-0 lg:relative lg:h-full overflow-hidden">
               <img
                 className="absolute relative inset-0 h-full w-full object-cover "
-                src="https://res-console.cloudinary.com/dyijvml1y/thumbnails/v1/image/upload/v1724679667/Y3RhX3ZwanFieA==/preview"
+                src="/cta.jpg"
                 alt="Mustaqbal program in action"
               />
             </div>
