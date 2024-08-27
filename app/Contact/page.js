@@ -22,7 +22,7 @@ export default function Contact() {
 
   return (
     <div className="relative bg-cover bg-center" style={{ backgroundImage: "url('/class.jpg')" }}>
-      <div className="bg-white bg-opacity-75 p-8">
+      <div className="bg-white bg-opacity-25 p-8">
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6">
           <div className="mb-4">
             <label htmlFor="first-name" className="block text-sm font-font text-black">

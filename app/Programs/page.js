@@ -44,23 +44,23 @@ export default function ProgramsSection() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
         <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-          <h2 className="text-sm font-semibold text-white tracking-wide uppercase">
+          <h2 className="text-sm font-semibold text-white font-font  tracking-wide uppercase">
             Our Programs
           </h2>
-          <p className="mt-3 text-3xl font-extrabold text-white">
+          <p className="mt-3 text-3xl font-font  font-extrabold text-white">
             Empowering Communities
           </p>
-          <p className="mt-5 text-lg text-gray-300">
+          <p className="mt-5 text-lg text-white font-font ">
             Through our diverse programs, we are equipping women and youth with the tools they need to succeed in a technology-driven world.
           </p>
 
           <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
             {programs.map((program, index) => (
               <div key={index}>
-                <span className="block text-2xl font-extrabold text-white">
+                <span className="block text-2xl font-font font-extrabold text-white">
                   {program.title}
                 </span>
-                <span className="mt-1 block text-base text-gray-300">
+                <span className="mt-1 block font-font  text-base text-white">
                   {program.description}
                 </span>
               </div>
