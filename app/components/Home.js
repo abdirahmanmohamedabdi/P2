@@ -23,13 +23,13 @@ export default function Example() {
         <div className="relative mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8">
           {/* Hero Section */}
           <div className="text-center">
-            <h2 className="text-sm font-semibold text-white uppercase tracking-wide">
+            <h2 className="text-sm font-semibold text-white  font-font uppercase tracking-wide">
               Empowerment through Technology
             </h2>
-            <p className="mt-3 text-3xl font-extrabold text-white sm:text-4xl">
+            <p className="mt-3 text-3xl font-extrabold  font-font text-white sm:text-4xl">
               Our Mission
             </p>
-            <p className="mt-5 text-lg text-gray-300">
+            <p className="mt-5 text-lg  font-font text-white">
               To bridge the digital divide and provide marginalized communities with the skills and resources necessary to thrive in the digital age.
             </p>
           </div>
@@ -38,10 +38,10 @@ export default function Example() {
           <div className="mt-12 grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-x-8">
             {/* Section 1 */}
             <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold  font-font text-white">
                 Building Sustainable Futures
               </h3>
-              <p className="mt-4 text-base text-gray-300">
+              <p className="mt-4 text-base  font-font text-white">
                 By equipping marginalized communities with digital and entrepreneurial skills, Mustaqbal is helping to build sustainable futures where women and youth can thrive in the digital economy.
               </p>
             </div>
@@ -62,10 +62,10 @@ export default function Example() {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold  font-font text-white">
                 Empowering Communities
               </h3>
-              <p className="mt-4 text-base text-gray-300">
+              <p className="mt-4 text-base font-font text-gray-300">
                 Our programs are designed to empower communities by providing access to technology education, fostering innovation, and creating opportunities for economic growth and social development.
               </p>
             </div>
