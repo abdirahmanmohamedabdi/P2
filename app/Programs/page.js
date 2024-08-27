@@ -1,4 +1,4 @@
-import Image from "next/image"; // Next.js optimized image component
+import Image from "next/image";
 
 const programs = [
   {
@@ -22,53 +22,47 @@ const programs = [
       "This program is dedicated to nurturing the next generation of leaders. Through leadership training, mentorship, and community service projects, we empower youth to take active roles in their communities, fostering a culture of responsibility and civic engagement.",
   },
 ];
+
 export default function ProgramsSection() {
   return (
-    <div className="bg-blue-100 py-12"> {/* Changed bg-white to bg-blue-100 for a light blue background */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center font-font text-one mb-8">
-          Our Programs
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="space-y-6">
+    <div className="relative bg-gray-900"> {/* Dark background to match the Impact page */}
+      <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
+        <div className="h-full w-full xl:grid xl:grid-cols-2">
+          <div className="h-full xl:relative xl:col-start-2">
             <img
-              src="/1.jpg"
-              alt="Program Image 1"
-              className="rounded-lg shadow-lg w-full object-cover"
-              width={550}
-              height={350}
+              className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+              src="/1.jpg" // Background image to fill the right side
+              alt="Programs background"
             />
-            
-            {programs.slice(0, 2).map((program, index) => (
-              <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-one mb-3">
-                  {program.title}
-                </h3>
-                <p className="text-base text-gray-700">
-                  {program.description}
-                </p>
-              </div>
-            ))}
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-22 xl:bg-gradient-to-r"
+            />
           </div>
+        </div>
+      </div>
 
-          <div className="space-y-6">
-            <img
-              src="/2.jpg"
-              alt="Program Image 2"
-              className="rounded-lg shadow-lg w-full object-cover"
-              width={550}
-              height={350}
-            />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+        <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+          <h2 className="text-sm font-semibold text-white tracking-wide uppercase">
+            Our Programs
+          </h2>
+          <p className="mt-3 text-3xl font-extrabold text-white">
+            Empowering Communities
+          </p>
+          <p className="mt-5 text-lg text-gray-300">
+            Through our diverse programs, we are equipping women and youth with the tools they need to succeed in a technology-driven world.
+          </p>
 
-            {programs.slice(2).map((program, index) => (
+          <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+            {programs.map((program, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-one mb-3">
+                <span className="block text-2xl font-extrabold text-white">
                   {program.title}
-                </h3>
-                <p className="text-base font-font text-gray-700">
+                </span>
+                <span className="mt-1 block text-base text-gray-300">
                   {program.description}
-                </p>
+                </span>
               </div>
             ))}
           </div>

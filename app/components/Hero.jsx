@@ -10,7 +10,7 @@ export default function Heroe() {
         alt="Mustaqbal Hero"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-black opacity-80"></div> {/* Increased opacity */}
+      <div className="absolute inset-0 bg-black opacity-40"></div> {/* Increased opacity */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-font font-bold mb-4"> {/* Adjust text size for different screen sizes */}
