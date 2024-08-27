@@ -77,7 +77,7 @@ export default function Navbar() {
                       </Popover>
                     </>
                   ) : (
-                    <a href={item.href} className="text-base font-medium  hover:text-black text-one font-font">
+                    <a href={item.href} className="text-base font-medium  hover:text-two text-one font-font">
                       {item.name}
                     </a>
                   )}

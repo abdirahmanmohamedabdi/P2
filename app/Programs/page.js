@@ -24,30 +24,25 @@ const programs = [
 ];
 export default function ProgramsSection() {
   return (
-    <div className="bg-white py-16">
+    <div className="bg-blue-100 py-12"> {/* Changed bg-white to bg-blue-100 for a light blue background */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Header */}
-        <h2 className="text-4xl font-bold text-center font-font text-one mb-12">
+        <h2 className="text-4xl font-bold text-center font-font text-one mb-8">
           Our Programs
         </h2>
         
-        {/* Program Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* First Column - Image + Text */}
-          <div className="space-y-8">
-            {/* First Image */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-6">
             <img
-              src="/1.jpg" // Replace with actual image path
+              src="/1.jpg"
               alt="Program Image 1"
               className="rounded-lg shadow-lg w-full object-cover"
-              width={600}
-              height={400}
+              width={550}
+              height={350}
             />
             
-            {/* First Two Programs */}
             {programs.slice(0, 2).map((program, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-one mb-4">
+                <h3 className="text-2xl font-bold font-font text-one mb-3">
                   {program.title}
                 </h3>
                 <p className="text-base text-gray-700">
@@ -57,21 +52,18 @@ export default function ProgramsSection() {
             ))}
           </div>
 
-          {/* Second Column - Image + Text */}
-          <div className="space-y-8">
-            {/* Second Image */}
+          <div className="space-y-6">
             <img
-              src="/2.jpg" // Replace with actual image path
+              src="/2.jpg"
               alt="Program Image 2"
               className="rounded-lg shadow-lg w-full object-cover"
-              width={600}
-              height={400}
+              width={550}
+              height={350}
             />
 
-            {/* Next Two Programs */}
             {programs.slice(2).map((program, index) => (
               <div key={index}>
-                <h3 className="text-2xl font-bold font-font text-one  mb-4">
+                <h3 className="text-2xl font-bold font-font text-one mb-3">
                   {program.title}
                 </h3>
                 <p className="text-base font-font text-gray-700">
@@ -82,9 +74,6 @@ export default function ProgramsSection() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      
     </div>
   );
 }
