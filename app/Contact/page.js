@@ -25,7 +25,7 @@ export default function Contact() {
       <div className="bg-white bg-opacity-25 p-8">
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6">
           <div className="mb-4">
-            <label htmlFor="first-name" className="block text-sm font-font text-black">
+            <label htmlFor="first-name" className="block text-sm font-font text-white">
               First name
             </label>
             <input
@@ -37,7 +37,7 @@ export default function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="last-name" className="block text-sm font-font text-black text-black">
+            <label htmlFor="last-name" className="block text-sm font-font text-black text-white">
               Last name
             </label>
             <input
@@ -49,7 +49,7 @@ export default function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-font text-black text-gray-700">
+            <label htmlFor="email" className="block text-sm font-font text-black text-white">
               Email
             </label>
             <input
@@ -62,7 +62,7 @@ export default function Contact() {
             <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
           <div className="mb-4">
-            <label htmlFor="company" className="block text-sm font-font text-black text-gray-700">
+            <label htmlFor="company" className="block text-sm font-font text-black text-white">
               Country
             </label>
             <input
@@ -74,7 +74,7 @@ export default function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="phone" className="block text-sm font-font text-black text-gray-700">
+            <label htmlFor="phone" className="block text-sm font-font text-black text-white">
               Phone
             </label>
             <input
@@ -86,7 +86,7 @@ export default function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="how-can-we-help" className="block text-sm font-font text-black text-gray-700">
+            <label htmlFor="how-can-we-help" className="block text-sm font-font text-black text-white">
               How can we help you?
             </label>
             <textarea
@@ -99,7 +99,7 @@ export default function Contact() {
             <ValidationError prefix="Message" field="message" errors={state.errors} />
           </div>
           <fieldset className="mb-4">
-            <legend className="block text-sm font-font text-black text-gray-700">Inquiry Type</legend>
+            <legend className="block text-sm font-font text-black text-white">Inquiry Type</legend>
             <div className="mt-4 grid grid-cols-1 gap-y-4">
               <div className="flex items-center">
                 <input
@@ -110,7 +110,7 @@ export default function Contact() {
                   required
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                 />
-                <label htmlFor="general-inquiry" className="ml-3 block text-sm font-font text-black text-gray-700">
+                <label htmlFor="general-inquiry" className="ml-3 block text-sm font-font text-black text-white">
                   Volunteer
                 </label>
               </div>
@@ -122,7 +122,7 @@ export default function Contact() {
                   type="radio"
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                 />
-                <label htmlFor="technical-support" className="ml-3 block font-font text-black text-sm text-gray-700">
+                <label htmlFor="technical-support" className="ml-3 block font-font text-black text-sm text-white">
                   Donate
                 </label>
               </div>
@@ -134,14 +134,14 @@ export default function Contact() {
                   type="radio"
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                 />
-                <label htmlFor="feedback" className="ml-3 block text-sm font-font text-black text-gray-700">
+                <label htmlFor="feedback" className="ml-3 block text-sm font-font text-black text-white">
                   Partnership
                 </label>
               </div>
             </div>
           </fieldset>
           <div className="mb-4">
-            <label htmlFor="how-did-you-hear-about-us" className="block text-sm font-medium font-font text-black text-gray-700">
+            <label htmlFor="how-did-you-hear-about-us" className="block text-sm font-medium font-font text-black text-white">
               How did you hear about us?
             </label>
             <input
@@ -155,7 +155,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="inline-flex justify-center py-2 px-4 border border-transparent font-font text-white shadow-sm text-sm font-medium rounded-md text-white bg-one focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex justify-center py-2 px-4 border border-transparent font-font text-white shadow-sm text-sm font-medium rounded-md text-white bg-one hover:background-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Submit Form
           </button>
