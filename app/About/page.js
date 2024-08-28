@@ -36,7 +36,7 @@ export default function AboutUs() {
           <div className="mt-12 space-y-12">
             <div>
               <h3 className="text-2xl font-bold text-white font-font">
-                Why Mustaqbal Was Built
+              The Motivation for Establishing Mustaqbal
               </h3>
               <p className="mt-2 text-base text-white font-font">
                 Mustaqbal was established in response to the growing need for digital empowerment in marginalized communities. With the rapid advancement of technology, access to digital resources and knowledge has become a critical component for economic and social development. However, many communities in Nairobi and North Eastern Kenya remain excluded from these opportunities due to lack of access, awareness, and skills. Mustaqbal aims to address these gaps by providing comprehensive training programs, mentorship, and resources to enable these communities to harness the power of technology for their own development.
