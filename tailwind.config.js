@@ -13,12 +13,14 @@ module.exports = {
       'one': '#050C9C',
       'two': '#3ABEF9',
       'three': '#050C9C',
-      'nine': '#1B1C25',
+      'four': '#4E31AA',
+      'five': '#6482AD',
+      'nine': '#A7E6FF',
       'white': '#FFFFFF',
     },
    
       fontFamily: {
-       font: ['Montserrat',],
+       font: ['Roboto Slab',],
       },
       keyframes: {
         fadeIn: {
