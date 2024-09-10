@@ -1,58 +1,115 @@
 export default function Impact() {
-    return (
-      
-        <div className="relative bg-gray-900">
+  return (
+    <div className="bg-gray-100 py-16">
+      {/* Hero Section */}
+      <div className="relative bg-white shadow-md">
+        <div className="absolute inset-0">
+          <img
+            className="w-full h-full object-cover"
+            src="/0.jpg"
+            alt="Training session"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold font-font text-white md:text-5xl">
+            Making a Difference, One Community at a Time
+          </h1>
+          <p className="mt-6 text-lg font-font text-gray-200">
+            At Mustaqbal, we are dedicated to empowering marginalized women and youth through technology and education. Our mission is to foster opportunities for growth and development.
+          </p>
+        </div>
+      </div>
 
-          
-          
-        <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
-          
-          <div className="h-full w-full xl:grid xl:grid-cols-2">
-            <div className="h-full xl:relative xl:col-start-2">
-              <img
-                className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src="/0.jpg"
-                alt="Training session"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-              />
-            </div>
+      {/* Statistics Section */}
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold font-font text-gray-900 text-center">
+          Empowering Lives through Action
+        </h2>
+        <p className="mt-4 max-w-3xl mx-auto font-font text-center text-lg text-gray-600">
+          These numbers showcase our progress and the lives we’ve touched through our programs, events, and collaborations.
+        </p>
+
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
+          {/* Impact Metric 1 */}
+          <div className="p-6 bg-white shadow-lg rounded-lg">
+            <span className="block text-4xl font-font font-extrabold text-gray-900">
+              500+
+            </span>
+            <p className="mt-2 text-base font-font text-gray-600">Women Empowered</p>
+          </div>
+
+          {/* Impact Metric 2 */}
+          <div className="p-6 bg-white shadow-lg rounded-lg">
+            <span className="block text-4xl font-font font-extrabold text-gray-900">
+              1,000+
+            </span>
+            <p className="mt-2 text-base font-font text-gray-600">Youth Trained in Digital Skills</p>
+          </div>
+
+          {/* Impact Metric 3 */}
+          <div className="p-6 bg-white shadow-lg rounded-lg">
+            <span className="block text-4xl font-font font-extrabold text-gray-900">
+              300+
+            </span>
+            <p className="mt-2 text-base font-font text-gray-600">New Businesses Started</p>
+          </div>
+
+          {/* Impact Metric 4 */}
+          <div className="p-6 bg-white shadow-lg rounded-lg">
+            <span className="block text-4xl font-font font-extrabold text-gray-900">
+              25+
+            </span>
+            <p className="mt-2 text-base font-font text-gray-600">Communities Reached</p>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-          <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-            <h2 className="text-sm font-semibold font-font text-white tracking-wide uppercase">
-              Empowerment in Numbers
-            </h2>
-            <p className="mt-3 text-3xl font-font  font-extrabold text-white">
-              Our Impact
-            </p>
-            <p className="mt-5 text-lg font-font  text-gray-300">
-              At Mustaqbal, we believe that every individual has the potential to create a brighter future for themselves and their communities. Here’s a snapshot of our impact:
-            </p>
-            <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-              <p>
-                <span className="block text-2xl font-extrabold font-font  text-white">500+</span>
-                <span className="mt-1 block text-base font-font  text-gray-300">Women empowered through our programs</span>
+      </div>
+
+      {/* Story Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold font-font text-gray-900">
+                Our Story
+              </h3>
+              <p className="mt-4 text-lg font-font text-gray-600">
+                Since our inception, Mustaqbal has been committed to empowering women and youth by providing them with the tools and knowledge they need to thrive in today’s digital world. From offering digital skills training to supporting entrepreneurship, we aim to create lasting impact in the communities we serve.
               </p>
-              <p>
-                <span className="block text-2xl font-extrabold text-white">1,000+</span>
-                <span className="mt-1 block text-base font-font  text-gray-300">Youth trained in digital skills</span>
+              <p className="mt-4 text-lg font-font text-gray-600">
+                Our holistic approach focuses on community engagement, mentorship, and sustainable development, ensuring that our efforts lead to long-term success and empowerment.
               </p>
-              <p>
-                <span className="block text-2xl font-extrabold font-font  text-white">300+</span>
-                <span className="mt-1 block text-base  font-font  text-gray-300">Businesses started by program graduates</span>
-              </p>
-              <p>
-                <span className="block text-2xl font-font  font-extrabold text-white">25+</span>
-                <span className="mt-1 block text-base font-font  text-gray-300">Communities reached across Kenya</span>
-              </p>
+            </div>
+            <div className="relative">
+              <img
+                className="w-full h-full object-cover rounded-lg shadow-md"
+                src="/somali.jpg"
+                alt="Community impact"
+              />
             </div>
           </div>
         </div>
       </div>
-    )
-  }
-  
+
+      {/* Call to Action */}
+      <div className="bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto text-center">
+          <h3 className="text-3xl font-font font-bold">
+            Join Us in Creating a Brighter Future
+          </h3>
+          <p className="mt-4 font-font text-lg">
+            Whether it's through volunteering, donating, or simply spreading the word, you can help us make a difference in the lives of marginalized women and youth.
+          </p>
+          <div className="mt-8">
+            <a
+              href="/get-involved"
+              className="bg-white text-gray-900 py-3 px-6 font-font rounded-full hover:bg-gray-100"
+            >
+              Get Involved
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

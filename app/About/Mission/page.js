@@ -85,13 +85,13 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="py-16 px-8">
+      <section className="py-16 bg-gray-900  px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-font font-bold mb-6">Join Us</h2>
-          <p className="text-lg font-font mb-8">
+          <h2 className="text-4xl text-white  font-font font-bold mb-6">Join Us</h2>
+          <p className="text-lg text-white font-font mb-8">
             We invite you to join us in our mission to bridge the digital divide and empower women and youth in marginalized communities. Together, we can create a future filled with possibilities.
           </p>
-          <button className="bg-two text-white py-2 px-6 rounded-full hover:bg-two">
+          <button className="bg-white text-black py-2 px-6 rounded-full hover:bg-two">
             Get Involved
           </button>
         </div>
