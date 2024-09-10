@@ -67,7 +67,7 @@ export default function OurHistory() {
         <p className="text-lg font-font mb-6">
           Mustaqbal is on a mission to empower women and youth in marginalized communities. Together, we can make a difference. Join us in building a future where everyone has the opportunity to thrive.
         </p>
-        <button className="bg-white font-font text-blue-900 px-6 py-3 rounded-full font-semibold shadow-lg transform hover:scale-105 transition duration-300">
+        <button className="bg-white font-font text-blue-900 px-6 py-3 rounded font-semibold shadow-lg transform hover:scale-105 transition duration-300">
           Get Involved
         </button>
       </div>

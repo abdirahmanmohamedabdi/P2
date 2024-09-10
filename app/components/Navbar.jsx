@@ -111,7 +111,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <a href="/Contact">
-            <a className="bg-two text-white px-4 py-2 rounded-full hover:bg-one transition duration-300">Contact</a>
+            <a className="bg-two text-white px-4 py-2 rounded hover:bg-one transition duration-300">Contact</a>
           </a>
         </div>
 
